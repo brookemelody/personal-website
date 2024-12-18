@@ -1,21 +1,37 @@
+/* Nunito font designed by Vernon Adams, Cyreal, & Jacques Le Bailly*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Modak font designed by Ek Type */
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Playpen Sans font designed by TypeTogether, Laura Meseguer, Veronika Burian, & José Scaglione*/
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-[#f0f8ff]
+  }
+  * {
+    @apply dark:text-[#f0f8ff] text-[#4D7191]
+  }
+  svg {
+    @apply dark:fill-[#f0f8ff] fill-[#4D7191]
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+#container, #main-image {
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
+/* Prevent bullet points in unordered lists with list-disc styling from overflowing out of the containing div */
+ul {
+  list-style-position: inside;
 }
