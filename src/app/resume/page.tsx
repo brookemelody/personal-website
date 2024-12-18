@@ -76,12 +76,12 @@ export default function Resume() {
                 </details>
                 <details open>
                     <summary className="md:text-xl sm:text-lg text-pink-500 dark:text-pink-400"><u className="text-pink-500 dark:text-pink-400">Honors and Activities</u></summary>
-                        <b className="md:text-lg sm:text-md">North Carolina State University Dean's List</b> (All previous semesters)
+                        <b className="md:text-lg sm:text-md">{`North Carolina State University Dean's List`}</b> (All previous semesters)
                         <details open>
                             <summary className="md:text-lg sm:text-md"><b>North Carolina State University Theater Department</b> (August 2023 - December 2023), Volunteer, Costume Shop</summary>
                             <ul className="list-disc">
                             <li>Designed and sewed costumes for productions of the Fall 2023 season</li>
-                            <li>Organized the department's expansive costume collection for the annual thrift store event</li>
+                            <li>{`Organized the department's expansive costume collection for the annual thrift store event`}</li>
                             <li>Took promotional photographs of costumes to be published in advertisements</li>
                             </ul>
                         Skills Used: Communication, organization, advertising

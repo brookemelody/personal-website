@@ -1,7 +1,9 @@
 "use client"
 
+import { ReactNode } from "react";
+
 interface WrapperProps {
-    children: any;
+    children: ReactNode;
 }
 
 /*
