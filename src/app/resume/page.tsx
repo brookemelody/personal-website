@@ -13,7 +13,7 @@ export default function Resume() {
             <h1 className="text-2xl"><b>RESUME</b></h1>
             <div className="flex justify-center gap-5 mt-3">
                     <NavButton buttonName="home" link="/"/>
-                    <NavButton buttonName="download pdf copy" link="/files/resume.pdf" />
+                    <NavButton buttonName="download pdf copy" link="/files/Brooke_Wu_Resume.pdf" />
             </div>
             <div className="flex flex-col">
                 <details open>
