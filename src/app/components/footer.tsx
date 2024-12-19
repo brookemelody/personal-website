@@ -1,3 +1,5 @@
+import { OutgoingLink } from "./nav";
+
 const MyLinks = () => {
     return (
         <>
@@ -19,7 +21,7 @@ export const Footer = () => {
     <>
     <footer className="flex flex-col items-center mb-5">
           <MyLinks/>
-          <p className="">Website made by <b className="text-pink-500 dark:text-pink-400">Brooke Melody Wu</b>, <b>2024-{currentYear}</b></p>
+          <p className="">Website made by <b className="text-pink-500 dark:text-pink-400">Brooke Melody Wu</b>, <b>2024-{currentYear}</b>, <OutgoingLink linkText="Source Code" link="https://github.com/brookemelody/personal-website"/></p>
     </footer>
     </>
   )
