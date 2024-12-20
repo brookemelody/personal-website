@@ -18,7 +18,7 @@ export default function Resume() {
             <div className="flex flex-col">
                 <details open>
                     <summary className="md:text-xl sm:text-lg text-pink-500 dark:text-pink-400"><u className="text-pink-500 dark:text-pink-400">Objective</u></summary>
-                    <p>A current sophomore student majoring in Computer Science and seeking an internship or co-op opportunity starting
+                    <p>A current undergraduate student majoring in Computer Science and seeking an internship or co-op opportunity starting
                     Summer 2025 in software engineering or full-stack development.</p>
                 </details>
                 <details open>
@@ -29,11 +29,11 @@ export default function Resume() {
                 </details>
                 <details open>
                     <summary className="md:text-xl sm:text-lg text-pink-500 dark:text-pink-400"><u className="text-pink-500 dark:text-pink-400">Skills</u></summary>
-                    <p><b>Programming Languages:</b> Java, C, C#, JavaScript, TypeScript, SQL, Python, Ruby
+                    <p><b>Programming Languages:</b> Java, C, C#, Assembly Language, JavaScript, TypeScript, SQL, Python, Ruby
                     <br></br><b>Web Technologies:</b> Ruby on Rails, Next.js, React.js, HTML, CSS
                     <br></br><b>Concepts:</b> Test-driven development, Supervised Machine Learning & Linear Regression, Statistical data analysis, Qualitative data analysis
                     <br></br><b>Operating Systems:</b> Linux, Windows, MacOS, Android
-                    <br></br><b>Software & Tools:</b> Git, Jenkins, Docker, Microsoft Office Suite, Adobe Creative Cloud</p>
+                    <br></br><b>Software & Tools:</b> Git, Jenkins, Docker, Jira, Eclipse, Visual Studio Code, Microsoft Office Suite, Adobe Creative Cloud</p>
                 </details>
                 <details open>
                     <summary className="md:text-xl sm:text-lg text-pink-500 dark:text-pink-400"><u className="text-pink-500 dark:text-pink-400">Experience</u></summary>
