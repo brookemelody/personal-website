@@ -19,10 +19,10 @@ export default async function RandomQuote() {
     const len = data.length;
     // By default, Math.random() returns a number x where 0 <= x < 1
     // Floor function is needed to ensure that the generated number is a valid JSON array index and not a floating point number or out of bounds
-    let index = Math.floor(Math.random() * len);
-    let randQuote = data[index];
+    const index = Math.floor(Math.random() * len);
+    const randQuote = data[index];
 
     return (
-        <p className='text-lg text-center text-pink-500 dark:text-pink-300 font-bold mb-5'>"{randQuote.quote}" - {randQuote.attribution}</p>
+        <p className='text-lg text-center text-pink-500 dark:text-pink-300 font-bold mb-5'>{`"`}{randQuote.quote}{`"`} - {randQuote.attribution}</p>
     )
 }
