@@ -15,7 +15,7 @@
   body {
     @apply dark:bg-gray-800 bg-[#f0f8ff]
   }
-  * {
+  * { /* Default text */
     @apply dark:text-[#f0f8ff] text-[#4D7191]
   }
   svg {
@@ -27,11 +27,40 @@
   font-family: 'Nunito', sans-serif;
 }
 
-#container, #main-image {
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
-}
-
 /* Prevent bullet points in unordered lists with list-disc styling from overflowing out of the containing div */
 ul {
   list-style-position: inside;
+}
+
+@keyframes loadContent {
+  0% { 
+    opacity: 0;
+    transform: translate(0, 60); /* Load in from bottom (negative y axis) */
+  }
+  100% { 
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes loadFromLeft {
+    0% {
+      opacity: 0;
+      transform: translate(-90, 0);           
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+}
+
+#container, #main-image {
+  animation-name: loadContent;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
+#loadLeft {
+  animation-name: loadFromLeft;
+  animation-duration: 2s;
 }
