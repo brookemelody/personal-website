@@ -23,6 +23,6 @@ export default async function RandomQuote() {
     let randQuote = data[index];
 
     return (
-        <p className='text-lg text-center text-pink-500 font-bold mb-5'>"{randQuote.quote}" - {randQuote.attribution}</p>
+        <p className='text-lg text-center text-pink-500 dark:text-pink-300 font-bold mb-5'>"{randQuote.quote}" - {randQuote.attribution}</p>
     )
 }
