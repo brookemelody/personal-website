@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "./components/footer";
 import { ThemeProvider } from "next-themes";
 import { Header } from "./components/header";
+import RandomQuote from "./components/quote";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         {/* Allow next-themes library to apply theme to the HTML element*/}
         <ThemeProvider attribute="class" defaultTheme="system">
           <Header/>
+          <RandomQuote/>
           {children}
           <Footer/>
         </ThemeProvider>

@@ -1,6 +1,5 @@
 "use client"
 import { Toggle } from "./toggle"
-
 export const Header = () => {
     return (
         <>
